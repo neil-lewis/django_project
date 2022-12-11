@@ -1,0 +1,24 @@
+{% extends "pizzas/base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<style>
+    body{
+        background-image: url(https://family-images-y24bv7yxalct4.azureedge.net/families/9523/9523_background_1984x900.webp);background-size: 100%
+    }
+</style>
+
+<p style="font-family:Bradley Hand; color:rgb(250, 228, 200); font-size: 40px;">Neil's Pizzeria</p>
+
+<p style="font-family:Bradley Hand; color:rgb(250, 228, 200); font-size: 40px;"><a href="{% url 'pizzas:pizzas' %}">Pizzas</a></p>
+
+<p style="font-family:Trebuchet MS; color:rgb(250, 228, 200); font-size: 20px;">Neil's Pizzeria offers a variety of pizzas,<br>
+    to satisfy all of your pizza needs.</p>
+
+
+
+</body>
+
+{% endblock content %}
